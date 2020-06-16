@@ -5,10 +5,10 @@ inputs:
     description: 'Path to json file'
     required: true
   key:
-    description: 'Property within json file, e.g "name", "version", "scripts.build"'
+    description: 'Property path in json file, e.g "name", "version", "scripts.build"'
     required: true
   value:
-    description: 'Value for specified property.'
+    description: 'Value for the specified property.'
     required: true
 runs:
   using: 'node12'
