@@ -1,8 +1,6 @@
 import * as fs from 'fs';
 
-type PackageJson = any;
-
-export class PackageJsonEditor {
+export class JsonEditor {
   public constructor(private _path: string) {
   }
 
@@ -12,20 +10,20 @@ export class PackageJsonEditor {
     this._savePackageJson(pkg);
   }
 
-  private _loadPackageJson(): PackageJson {
+  private _loadPackageJson(): any {
     if (!fs.existsSync(this._path)) {
-      throw new Error(`Couldn't find package.json in "${this._path}"`);
+      throw new Error(`Couldn't find file in "${this._path}"`);
     }
     const json = fs.readFileSync(this._path, { encoding: 'utf-8' });
     try {
       return JSON.parse(json);
     } catch(e) {
-      console.error('Invalid package.json format.');
+      console.error('Invalid json format.');
       throw e;
     }
   }
   
-  private _setProperty(key: string, value: string, pkg: PackageJson) {
+  private _setProperty(key: string, value: string, pkg: any) {
     let obj = pkg;
     const properties = key.split('.');
     
@@ -40,9 +38,9 @@ export class PackageJsonEditor {
         obj = obj[property];
       }
     }
-  } 
+  }
 
-  private _savePackageJson(pkg: PackageJson) {
+  private _savePackageJson(pkg: any) {
     const json = JSON.stringify(pkg, null, 2);
     fs.writeFileSync(this._path, json);
   }

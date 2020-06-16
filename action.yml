@@ -1,12 +1,11 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Edito Json'
+description: 'Github action to modify json file'
 inputs:
-  package-json:
-    description: 'Path to package.json'
+  filename:
+    description: 'Path to json file'
     required: true
-    default: './package.json'
   key:
-    description: 'Property within package.json, e.g "name", "version", "scripts.build"'
+    description: 'Property within json file, e.g "name", "version", "scripts.build"'
     required: true
   value:
     description: 'Value for specified property.'

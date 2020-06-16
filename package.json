@@ -1,10 +1,11 @@
 {
-  "name": "package-config-action",
+  "name": "json-editor-action",
   "version": "1.0.0",
   "description": "Github action to modify package.json file",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "rm -r ./lib && rm -r node_modules"
   },
   "author": "Merthin Technologies",
   "license": "ISC",

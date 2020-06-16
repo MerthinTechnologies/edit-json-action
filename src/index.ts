@@ -1,11 +1,11 @@
 import * as core from '@actions/core';
-import { PackageJsonEditor } from './services/package-json-editor';
+import { JsonEditor } from './services/json-editor';
 
 try {
-  const packageJsonPath = core.getInput('package-json');
+  const filename = core.getInput('filename');
   const key = core.getInput('key');
   const value = core.getInput('value');
-  const editor = new PackageJsonEditor(packageJsonPath);
+  const editor = new JsonEditor(filename);
   editor.setProperty(key, value);
   console.log(`Set ${key} to "${value}"`);
 } catch (error) {
