@@ -43,7 +43,7 @@ export class PackageJsonEditor {
   } 
 
   private _savePackageJson(pkg: PackageJson) {
-    const json = JSON.stringify(pkg);
+    const json = JSON.stringify(pkg, null, 2);
     fs.writeFileSync(this._path, json);
   }
 }

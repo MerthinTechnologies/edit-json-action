@@ -7,6 +7,7 @@ try {
   const value = core.getInput('value');
   const editor = new PackageJsonEditor(packageJsonPath);
   editor.setProperty(key, value);
+  console.log(`Set ${key} to "${value}"`);
 } catch (error) {
   core.setFailed(error.message);
 }
