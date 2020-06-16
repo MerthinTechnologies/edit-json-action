@@ -1,4 +1,4 @@
-# Edit json action
+# Edit JSON action
 
 Github action to modify json file by properties.
 
