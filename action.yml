@@ -1,0 +1,16 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  package-json:
+    description: 'Path to package.json'
+    required: true
+    default: './package.json'
+  key:
+    description: 'Property within package.json, e.g "name", "version", "scripts.build"'
+    required: true
+  value:
+    description: 'Value for specified property.'
+    required: true
+runs:
+  using: 'node12'
+  main: 'lib/index.js'

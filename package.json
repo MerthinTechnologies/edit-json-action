@@ -1,0 +1,19 @@
+{
+  "name": "package-config-action",
+  "version": "1.0.0",
+  "description": "Github action to modify package.json file",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Merthin Technologies",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.2",
+    "typescript": "^3.7.4"
+  }
+}
