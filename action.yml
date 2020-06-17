@@ -1,5 +1,5 @@
 name: 'Edit JSON'
-description: 'Github action to modify json file'
+description: 'Github action to modify json files by properties.'
 inputs:
   filename:
     description: 'Path to json file'
@@ -12,4 +12,4 @@ inputs:
     required: true
 runs:
   using: 'node12'
-  main: 'lib/index.js'
+  main: 'dist/index.js'

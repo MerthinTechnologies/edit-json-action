@@ -2,7 +2,7 @@
   "name": "edit-json-action",
   "version": "1.0.0",
   "description": "Github Action to modify json file by properties.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc && ncc build ./js/index.js -m"
   },

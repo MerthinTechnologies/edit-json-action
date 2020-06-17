@@ -9,5 +9,6 @@ try {
   editor.setProperty(key, value);
   console.log(`Set ${key} to "${value}"`);
 } catch (error) {
+  console.log(error);
   core.setFailed(error.message);
 }
