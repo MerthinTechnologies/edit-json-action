@@ -20,7 +20,7 @@ Github action to modify json file by properties.
 ## Example usage
 
 ```yaml
-uses: MerthinTechnologies/edit-json-action@master
+uses: MerthinTechnologies/edit-json-action@v1
 with:
   filename: './package.json'
   key: 'version'
