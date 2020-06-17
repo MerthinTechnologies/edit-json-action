@@ -1,11 +1,10 @@
 {
-  "name": "json-editor-action",
+  "name": "edit-json-action",
   "version": "1.0.0",
-  "description": "Github action to modify package.json file",
+  "description": "Github Action to modify json file by properties.",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -r ./lib && rm -r node_modules"
+    "build": "tsc && ncc build ./js/index.js -m"
   },
   "author": "Merthin Technologies",
   "license": "ISC",
@@ -14,6 +13,7 @@
   },
   "devDependencies": {
     "@types/node": "^13.1.2",
+    "@zeit/ncc": "^0.22.3",
     "typescript": "^3.7.4"
   }
 }

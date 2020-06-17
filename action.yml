@@ -1,4 +1,4 @@
-name: 'Edit Json'
+name: 'Edit JSON'
 description: 'Github action to modify json file'
 inputs:
   filename:

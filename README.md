@@ -1,6 +1,6 @@
-# Edit JSON action
+# Edit JSON
 
-Github action to modify json file by properties.
+Github Action to modify json file by properties.
 
 ## Inputs
 
