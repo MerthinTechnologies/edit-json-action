@@ -9,11 +9,11 @@
   "author": "Merthin Technologies",
   "license": "ISC",
   "dependencies": {
-    "@actions/core": "^1.2.4"
+    "@actions/core": "^1.2.6"
   },
   "devDependencies": {
     "@types/node": "^13.1.2",
-    "@zeit/ncc": "^0.22.3",
+    "@vercel/ncc": "^0.24.1",
     "typescript": "^3.7.4"
   }
 }
